@@ -1,3 +1,4 @@
+import { notifySyncOK } from "@/backend/lib/email";
 import { fetchEvents } from "src/backend/api/controllers/webling";
 import { prisma } from "src/backend/db/client";
 
@@ -24,6 +25,6 @@ export async function syncEventsOnce() {
       }),
     ),
   );
-
+  await notifySyncOK(list.length);
   console.log(`[Webling] synced ${list.length} events`);
 }
