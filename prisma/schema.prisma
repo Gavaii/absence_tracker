@@ -1,0 +1,18 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]         // required for adapter-pg
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Event {
+  id          Int      @id            // ← Webling IDs are ints
+  title       String
+  begins      DateTime
+  ends        DateTime
+  description String?
+  @@index([begins])
+}
