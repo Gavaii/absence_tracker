@@ -1,4 +1,4 @@
-import { cn } from "@/_frontend/lib/utils";
+import { cn } from "src/frontend/lib/utils";
 import { useRef, type FormEvent } from "react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./components/ui/select";
 import { Input } from "./components/ui/input";

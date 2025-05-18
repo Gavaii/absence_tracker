@@ -4,7 +4,7 @@ import { helloName, helloRoot } from "./controllers/hello";
 import { notFound } from "./controllers/notFound";
 
 import { listEvents } from "./controllers/events";
-import { ApiRoutes } from "@/_shared/routes.helper";
+import { ApiRoutes } from "src/shared/routes.helper";
 
 
 export const routes = {

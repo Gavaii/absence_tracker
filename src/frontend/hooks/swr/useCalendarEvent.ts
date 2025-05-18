@@ -1,5 +1,5 @@
-import { ApiRoutes } from "@/_shared/routes.helper"
-import type { EventDTO } from "@/_shared/types/Event"
+import { ApiRoutes } from "src/shared/routes.helper"
+import type { EventDTO } from "src/shared/types/Event"
 import useSWR from "swr"
 
 export const useCalendarEvents = () => {

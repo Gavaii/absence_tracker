@@ -1,4 +1,4 @@
-import { prisma } from "@/_backend/db/client";
+import { prisma } from "src/backend/db/client";
 
 
 export async function listEvents() {

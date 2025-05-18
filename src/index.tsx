@@ -1,9 +1,9 @@
 import { serve, file } from "bun";
-import { routes } from "./_backend/api/routes";
-import { errorHandler } from "./_backend/api/errorHandler";
-import { startEventScheduler } from "./_backend/jobs/scheduler";
+import { routes } from "./backend/api/routes";
+import { errorHandler } from "./backend/api/errorHandler";
+import { startEventScheduler } from "./backend/jobs/scheduler";
 
-import index from "./_frontend/index.html";
+import index from "@/frontend/index.html";
 
 const server = serve({
   routes:{

@@ -1,8 +1,5 @@
 import "./index.css";
-import type { EventDTO } from "../_shared/types/Event";
-import useSWR from "swr"
 import { Card, CardContent } from "./components/ui/card";
-import { ApiRoutes } from "@/_shared/routes.helper";
 import { useCalendarEvents } from "./hooks/swr/useCalendarEvent";
 
 export function Home() {

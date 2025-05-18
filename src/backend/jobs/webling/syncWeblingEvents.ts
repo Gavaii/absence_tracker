@@ -1,5 +1,5 @@
-import { fetchEvents } from "@/_backend/api/controllers/webling";
-import { prisma } from "@/_backend/db/client";
+import { fetchEvents } from "src/backend/api/controllers/webling";
+import { prisma } from "src/backend/db/client";
 
 export async function syncEventsOnce() {
   const list = await fetchEvents();
